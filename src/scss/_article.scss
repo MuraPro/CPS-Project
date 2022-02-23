@@ -1,0 +1,148 @@
+//article
+
+.article-body {
+}
+.article-header {
+    box-shadow: none;
+}
+.article-title {
+}
+//таблица
+
+.article-table {
+    margin: 0 32px;
+    @media (max-width: 575.9px) {
+        display: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        height: 127px;
+        background-color: #ffffff;
+        border-radius: 6px;
+    }
+    tr {
+    }
+    th {
+        border-bottom: 1px solid $gray-light;
+        text-align: left;
+        padding: 31px 0 16px 24px;
+        font-family: "TTLakes-r";
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray;
+        opacity: 0.72;
+    }
+    td {
+        border-bottom: 1px solid $gray-light;
+        text-align: left;
+        padding: 23px 0 23px 24px;
+        font-family: "TTLakes-r";
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: $darck;
+    }
+}
+.table-header {
+	background-color: #f8f8f8;
+}
+
+// слайдер
+
+.swiper-container {
+}
+.section-slides {
+}
+.swiper-wrapper {
+}
+.article-wrapper {
+    min-height: 268px !important;
+}
+.swiper-slide {
+}
+.article__btn {
+    width: 119px;
+    height: 32px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #ff3e79;
+    color: #ffffff;
+    font-family: "TTLakes-b";
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    margin-right: 24px;
+    &::after {
+        content: "";
+        background: url("../img/icons/goside.svg") no-repeat;
+        position: absolute;
+        top: 5px;
+        left: 90px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+.aticle-box {
+    width: 260px !important;
+    min-height: 200px !important;
+    box-shadow: none;
+	margin-left: 30px;
+}
+.article-box {
+    &__thinks {
+        width: 260px;
+        height: 200px;
+        position: relative;
+    }
+    &__btn {
+        width: 119px;
+        height: 32px;
+        border-radius: 20px;
+        position: relative;
+        background-color: #ff3e79;
+        color: #ffffff;
+        font-family: "TTLakes-b";
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        margin-right: 24px;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        &::after {
+            content: "";
+            background: url("../img/icons/goside.svg") no-repeat;
+            position: absolute;
+            top: 5px;
+            left: 90px;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+}
+.table-label {
+    font-family: "TTLakes-m";
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+    opacity: 0.72;
+    position: relative;
+    padding: 10px 0px 4px 16px;
+}
+.table-text {
+    display: block;
+    font-family: "TTLakes-r";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $darck;
+    padding: 0 0 0 16px;
+}
+.section-slider {
+}
+.swiper-pagination {
+}

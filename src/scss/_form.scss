@@ -1,0 +1,140 @@
+.section-form {
+    max-width: 440px;
+    min-height: 550px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+        16px 0px 52px rgba(14, 24, 80, 0.2);
+    position: absolute;
+    right: -569px;
+    top: 0;
+    transition: 0.3s all ease 0s;
+    z-index: 111;
+    display: none;
+    @media (max-width: 575.9px) {
+        max-width: 320px;
+    }
+    &__title {
+        h2 {
+            font-family: "TTLakes-b";
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: -0.6px;
+            color: $darck;
+            margin: 40px 0px 24px 32px;
+            position: relative;
+            @media (max-width: 480px) {
+                margin: 104px 0px 24px 32px;
+            }
+            &:before {
+                content: "";
+                border-left: 3px solid #41f6d7;
+                border-radius: 2px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: -33px;
+                pointer-events: none;
+            }
+            &::after {
+                content: "";
+                background: url("../img/icons/burgerX.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0px;
+                left: -105px;
+                right: 0px;
+                bottom: 0px;
+                @media (max-width: 480px) {
+                    left: -5px;
+                    top: -86px;
+                }
+            }
+        }
+    }
+
+    &__body {
+    }
+
+    &__btn {
+        width: 119px;
+        height: 32px;
+        border-radius: 20px;
+        position: relative;
+        background-color: #ff3e79;
+        color: #ffffff;
+        font-family: "TTLakes-b";
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        margin: 24px 32px 10px 0;
+        align-self: flex-end;
+        padding-right: 10px;
+        &::after {
+            content: "";
+            background: url("../img/icons/goside.svg") no-repeat;
+            position: absolute;
+            top: 5px;
+            left: 90px;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+}
+.section-form.active {
+    display: flex;
+    transform: translate(-569px, 0px);
+}
+.userForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    input {
+        width: 85.4%;
+        height: 48px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    input[type~="text"],
+    input[type~="password"],
+    input[type~="tel"],
+    input[type~="email"],
+    textarea {
+        font-family: "TTLakes-m";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #b5b6bc;
+        padding-left: 16px;
+    }
+    textarea {
+        width: 85.4%;
+        height: 118px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        padding: 12px;
+        resize: none;
+    }
+    p {
+        width: 85%;
+        font-family: "TTLakes-m";
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+        margin: 16px 0 0 32px;
+        span {
+            color: #ff3e79;
+        }
+        a {
+            color: #7e7e82;
+        }
+    }
+}

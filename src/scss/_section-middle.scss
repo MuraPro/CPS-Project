@@ -1,0 +1,190 @@
+.section {
+}
+.section-middle {
+    max-width: 1120px;
+    margin: 20px auto;
+    min-height: 288px;
+    height: 1px;
+    position: relative;
+    border: 1px solid #000;
+
+    &__body {
+        width: 100%;
+		background-color: #f8f8f8;
+        box-sizing: border-box;
+        transition: 0.3s all ease 0s;
+		border-top: 1px solid #D9FFF5;
+		border-bottom: 1px solid #D9FFF5;
+    }
+
+    &__header {
+        width: 100%;
+        min-height: 56px;
+        box-sizing: border-box;
+        background-image: linear-gradient(to right, #f8f8f8 49%, #ffffff 51%);
+        border: 0;
+        box-shadow: 0px 7px 5px -5px $darck;
+    }
+
+    &__title {
+        font-family: "TTLakes-r";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $gray;
+        margin: 0px 0px 0px 32px;
+        padding-top: 16px;
+    }
+
+    &__boxs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 24px auto;
+        flex-wrap: wrap;
+        @media (max-width: 575.9px) {
+            display: none;
+        }
+    }
+
+    &__box {
+        span {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        width: 224px;
+        height: 160px;
+        border: 1px solid #000;
+        position: relative;
+        background: #ffffff;
+        border: 1px solid $gray-light;
+        box-sizing: border-box;
+        border-radius: 6px;
+        box-shadow: 0px 7px 5px -5px $darck;
+        a {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+        }
+        @media (max-width: 1144.9px) {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+        @media (max-width: 1119.9px) {
+            &:nth-child(4) {
+                display: block;
+            }
+        }
+        @media (max-width: 991.9px) {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+        @media (max-width: 767.9px) {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+        @media (max-width: 575.9px) {
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 16px;
+        }
+    }
+    &__elements {
+        max-width: 1120px;
+        margin: 24px 0px 0 0px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @media (max-width: 480px) {
+            margin: -24px 0 0 0;
+        }
+    }
+
+    &__btn {
+        font-family: "TTLakes-m";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        margin: 12px 0px 34px 63px;
+        position: relative;
+        transition: 0.1s all ease 0s;
+        background-color: transparent;
+        @media (max-width: 575.9px) {
+            display: none;
+        }
+        &::before {
+            width: 12px;
+            height: 12px;
+            content: "";
+            background: url("../img/icons/icon.svg") no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 6px;
+            left: -18px;
+            right: 0px;
+            bottom: 0px;
+            transition: 0.1s transform ease 0s;
+            transform: rotate(180deg);
+        }
+    }
+    &__footer {
+        max-width: 450px;
+        min-height: 140px;
+		margin-left: 32px;
+        p {
+            margin: 32px 0 16px 0px;
+            font-family: "TTLakes-r";
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: $darck;
+        }
+        a {
+            font-family: "TTLakes-m";
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $darck;
+            position: relative;
+            padding-right: 9px;
+			margin-bottom: 50px;
+            &::after {
+                content: "";
+                background: url("../img/icons/Line.svg") bottom right;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0px;
+                right: -3px;
+                left: 0px;
+                bottom: 5px;
+            }
+        }
+    }
+}
+.section-middle__btn.active::before {
+    transform: rotate(0deg);
+}
+.section-middle__elements.active {
+    display: none;
+}
+
+//слайдер
+
+.section-middle {
+    &__wrapper {
+        min-height: 228px !important;
+    }
+
+    &__box {
+        min-height: 160px !important;
+    }
+}

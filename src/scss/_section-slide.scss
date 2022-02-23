@@ -1,0 +1,345 @@
+//=======================================================
+// section
+
+.section {
+}
+.slide {
+    max-width: 1120px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    min-height: 400px;
+    background-color: #f8f8f8;
+    @media (max-width: 991.9px) {
+        min-height: 480px;
+    }
+	//========================
+	// display: none;
+}
+.slide-body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    transition: 0.3s all ease 0s;
+}
+.slide-header {
+    width: 100%;
+    min-height: 56px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #f8f8f8 49%, #ffffff 51%);
+    border: 0;
+    &__title {
+        font-family: "TTLakes-r";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $gray;
+        margin: 0px 0px 0px 32px;
+        padding-top: 16px;
+    }
+}
+.section-boxs {
+    max-width: 1120px;
+    margin: 24px 0px 0 0px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (max-width: 767.9px) {
+        justify-content: center;
+    }
+    @media (max-width: 575.9px) {
+        display: none;
+    }
+}
+.section-box {
+    flex: 0 1 21%;
+    height: 72px;
+    margin-bottom: 16px;
+    position: relative;
+    @media (max-width: 991.9px) {
+        flex: 0 1 30%;
+    }
+    @media (max-width: 767.9px) {
+        flex: 0 1 35%;
+        margin: 0 10px 16px 0;
+    }
+    &:nth-child(1) {
+        background: #fff url("../img/Lenovo_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(2) {
+        background: #fff url("../img/Samsung_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(3) {
+        background: #fff url("../img/Apple_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(4) {
+        background: #fff url("../img/View_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(5) {
+        background: #fff url("../img/Bosch_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(6) {
+        background: #fff url("../img/Hp_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(7) {
+        background: #fff url("../img/Accer_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    &:nth-child(8) {
+        background: #fff url("../img/Sony_logo.svg") no-repeat 15%;
+        border-radius: 6px;
+        img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+
+    &__elements {
+        max-width: 1120px;
+        margin: 24px 0px 0 0px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 0 16px 24px;
+        @media (max-width: 991.9px) {
+            justify-content: space-around;
+            margin: 0 0 16px 0px;
+        }
+        @media (max-width: 767.9px) {
+            justify-content: center;
+        }
+        @media (max-width: 575.9px) {
+            display: none;
+        }
+    }
+
+    &__element {
+        display: flex;
+        flex: 0 1 21%;
+        height: 72px;
+        margin-bottom: 16px;
+        position: relative;
+        margin-right: 51px;
+        @media (max-width: 991.9px) {
+            flex: 0 1 30%;
+            margin-right: 0px;
+        }
+        @media (max-width: 767.9px) {
+            flex: 0 1 35%;
+            margin: 0 10px 16px 0;
+        }
+        &:nth-child(1) {
+            background: #fff url("../img/Lenovo_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        &:nth-child(2) {
+            background: #fff url("../img/Lenovo_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        &:nth-child(3) {
+            background: #fff url("../img/Samsung_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        &:nth-child(4) {
+            background: #fff url("../img/Samsung_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        &:nth-child(5) {
+            background: #fff url("../img/Apple_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+    }
+}
+.section-box__elements.active {
+    display: none;
+}
+.section-box.active {
+    display: none;
+}
+
+// Слайдер section-slides - контейнер / section-item__slide - слайды / section-slider - пагинация
+
+.swiper-container {
+    display: none;
+    @media (max-width: 575.9px) {
+        display: block;
+    }
+}
+.swiper-wrapper {
+    width: 240px;
+    min-height: 130px !important;
+    height: 1px;
+    padding: 3px 3px 3px 10px;
+    margin: 0 !important;
+}
+.swiper-slide {
+    margin-top: 16px;
+    min-width: 0;
+    height: 72px !important;
+}
+.section-item {
+    &__slide {
+        height: 72px;
+        margin-right: 30px;
+        position: relative;
+        a {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        &:nth-child(1) {
+            background: #fff url("../img/Lenovo_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(2) {
+            background: #fff url("../img/Samsung_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(3) {
+            background: #fff url("../img/Apple_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(4) {
+            background: #fff url("../img/View_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(5) {
+            background: #fff url("../img/Bosch_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(6) {
+            background: #fff url("../img/Hp_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(7) {
+            background: #fff url("../img/Accer_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(8) {
+            background: #fff url("../img/Sony_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+        &:nth-child(9) {
+            background: #fff url("../img/Lenovo_logo.svg") no-repeat 15%;
+            border-radius: 6px;
+        }
+    }
+}
+/* Буллеты */
+.swiper-pagination {
+    line-height: 1rem;
+    font-size: 14px;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d3d3d3;
+}
+.swiper-pagination-bullet-active {
+    background-color: #b5b6bc;
+}
+
+.section-btn {
+    font-family: "TTLakes-m";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    margin: 12px 0px 34px 63px;
+    position: relative;
+    transition: 0.1s all ease 0s;
+    background-color: transparent;
+    &::before {
+        width: 12px;
+        height: 12px;
+        content: "";
+        background: url("../img/icons/icon.svg") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 6px;
+        left: -18px;
+        right: 0px;
+        bottom: 0px;
+        transition: 0.1s transform ease 0s;
+        transform: rotate(180deg);
+    }
+    @media (max-width: 575.9px) {
+        display: none;
+    }
+}
+.section-btn.active::before {
+    transform: rotate(0deg);
+}

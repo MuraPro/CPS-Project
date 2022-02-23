@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "TTLakes-b";
+	font-display: swap;
+	src: url("../fonts/TTLakesCondensed-Bold.woff") format("woff"), url("../fonts/TTLakesCondensed-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "TTLakes-m";
+	font-display: swap;
+	src: url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "TTLakes-r";
+	font-display: swap;
+	src: url("../fonts/TT Lakes Regular.woff") format("woff"), url("../fonts/TT Lakes Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+  }
+//переменные
+$darck: #1b1c21;
+$gray: #7e7e82;
+$gray-light: #eaeaea;
+$gray-bg: #f8f8f8;
+$side-bg: #ffffff;
+
+@import "swiper-bundle.min.scss";
+@import "nullstyle.scss";
+@import "inner.scss";
+@import "aside.scss";
+@import "header.scss";
+@import "form.scss";
+@import "form-call.scss";
+@import "section-header.scss";
+@import "section-slide.scss";
+@import "section-middle.scss";
+@import "article.scss";
+@import "footer.scss";
+
+.wrapper {
+    width: 100%;
+    height: 1px;
+    background-color: #f2f2f2;
+}
+
+//=============================
+//общие классы
+.link-text {
+    font-family: "TTLakes-m";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $darck;
+}
